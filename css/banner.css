@@ -1,0 +1,74 @@
+/*? banner inicial */
+.banner {
+  background-image: url("../img/wave.svg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: var(--ev-c1);
+}
+
+.banner-content {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  max-height: 600px;
+  height: calc(100vh - var(--navbar-height));
+  width: 100%;
+}
+
+.banner-content .texto h3 {
+  font-family: var(--title-font);
+  font-size: 2.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--ev-c7);
+}
+
+.banner-content .texto h3 .destaque {
+  display: block;
+  color: var(--ev-c11);
+}
+
+.banner img {
+  height: auto;
+  width: 70%;
+  max-width: 700px;
+}
+
+@media (min-width: 2000px) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner-content .texto h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {
+    background-position: 20%;
+    background-size: cover;
+  }
+  .banner-content {
+    grid-template-columns: 1fr;
+  }
+  .banner-content img {
+    max-width: 400px;
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .banner-content .texto h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .banner-content .texto h3 .destaque {
+    display: inline;
+  }
+}

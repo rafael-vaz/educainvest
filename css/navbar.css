@@ -1,0 +1,148 @@
+/*? navbar */
+.navbar {
+  width: 100%;
+  z-index: 2;
+  transition: 0.3s;
+  background-color: var(--ev-c1);
+}
+
+.navcontent {
+  height: var(--navbar-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navcontent a {
+  display: flex;
+  align-items: center;
+}
+
+.navcontent .logo {
+  height: auto;
+  width: 130px;
+}
+
+.navcontent .navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  z-index: 2;
+}
+
+.navbar .navlinks.visible {
+  display: flex;
+}
+
+.navcontent .navlinks li a {
+  display: block;
+  position: relative;
+  color: var(--ev-c7);
+  text-decoration: none;
+  line-height: 1.2;
+  font-family: var(--title-font);
+}
+
+.navcontent .navlinks li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  background-color: var(--ev-c9);
+  transition: 0.3s;
+}
+
+.navcontent .navlinks li a:hover::after,
+.navcontent .navlinks li a.active::after {
+  width: 100%;
+}
+
+.navcontent .menu-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: var(--ev-c11);
+  height: 36px;
+  width: 36px;
+  outline: none;
+  border: none;
+  color: var(--ev-c0);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navcontent .menu-button:hover {
+  background: var(--ev-c9);
+}
+
+body.nav-animation {
+  padding-top: var(--navbar-height);
+}
+
+.navbar[data-animation="true"].animation {
+  position: fixed;
+  animation: 0.3s navbarAnimation forwards;
+  border-bottom: 1px solid var(--ev-c5);
+}
+
+@keyframes navbarAnimation {
+  from {
+    top: calc(var(--navbar-height) * -1);
+  }
+  to {
+    top: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .navcontent .menu-button {
+    display: flex;
+  }
+
+  .navbar .navlinks {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    min-width: 160px;
+    background-color: var(--ev-c2);
+    animation: 0.3s rightToLeft forwards;
+    top: calc(var(--navbar-height) + 10px);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+    border-radius: 4px;
+    right: 20px;
+    gap: 0px;
+  }
+
+  .navcontent .navlinks li {
+    text-align: center;
+    text-align-last: center;
+    width: 100%;
+  }
+
+  .navcontent .navlinks li a {
+    padding: 14px 10px;
+  }
+
+  .navcontent .navlinks li + li {
+    border-top: 1px solid var(--ev-c5);
+  }
+
+  .navcontent .navlinks li a.active {
+    background-color: var(--ev-c5);
+  }
+
+  .navcontent .navlinks li a:hover {
+    background-color: var(--ev-c3);
+  }
+
+  .navcontent .navlinks li a:hover::after,
+  .navcontent .navlinks li a.active::after {
+    display: none;
+  }
+}

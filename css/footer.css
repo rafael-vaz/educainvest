@@ -1,0 +1,19 @@
+/*? rodape */
+footer {
+  width: 100%;
+  background-color: var(--ev-c11);
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--navbar-height);
+}
+
+footer p {
+  font-family: var(--default-font);
+  text-align: center;
+  text-align-last: center;
+  color: var(--ev-c0);
+}

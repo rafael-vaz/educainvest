@@ -1,0 +1,22 @@
+/*? quadros de conteudo ?*/
+/* destaque de texto */
+.quadro-destaque {
+  background-color: var(--ev-c10);
+  border-left: 4px solid var(--ev-c9);
+  line-height: 1.8;
+  padding: 20px;
+  border-radius: 4px;
+  color: var(--ev-c7);
+  margin: 2em 0;
+}
+/* padrao de conteudo */
+.quadro-padrao {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 2em 0;
+  border: 1px solid var(--ev-c2);
+  background-color: var(--ev-c1);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}

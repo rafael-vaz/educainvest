@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finanças - Educainvest</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar" data-animation="true">
+    <div class="navcontent wrapper">
+      <a href="./index.html"><img class="logo" src="./img/logo.svg" alt="Logo"></a>
+      <ul class="navlinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./investimentos.html">Investimentos</a></li>
+        <li><a href="./financas.html" class="active">Finanças</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+      </ul>
+      <button class="menu-button">
+        <i class="material-icons">menu</i>
+      </button>
+    </div>
+  </nav>
+
+  <main data-etapa="orcamento">
+    <div class="wrapper">
+      <!-- ferramenta de financas -->
+      <section class="financas">
+        <h3 class="title">Organize suas finanças</h3>
+
+        <div class="quadro-destaque">
+          <p>Calcule o seu <u>orçamento mensa</u>l utilizando a ferramenta disponível abaixo e organize as suas finanças
+            com mais
+            facilidade. Adicione novos campos de <u>despesas e rendimentos</u>, indicando o <strong>nome e o valor da
+              conta</strong> para
+            obter o
+            total da <strong>renda mensal</strong>.</p>
+        </div>
+
+        <div class="quadro-padrao anima-lr" data-orcamento="true">
+
+          <div class="grupo-contas" data-categoria="rendimentos">
+
+            <h3 class="subtitulo">Rendimentos mensais</h3>
+
+            <div class="legendas-box">
+              <label for="conta" class="legenda">Conta</label>
+              <label for="valor" class="legenda">Valor</label>
+            </div>
+
+            <div class="uma-conta">
+              <input class="conta-input" data-type="conta" type="text" placeholder="nome da conta">
+              <input class="conta-input" data-type="valor" type="text" pattern="[0-9,.]*" maxlength="12"
+                placeholder="0">
+              <div class="botoes">
+                <button class="adicionar"></button>
+                <button class="remover"></button>
+              </div>
+            </div>
+
+            <div class="total-grupo">
+              <span class="legenda">Total:</span>
+              <input class="valor" type="text" pattern="[0-9,.]*" value="0" disabled="">
+            </div>
+          </div>
+
+          <div class="grupo-contas" data-categoria="despesas">
+            <h3 class="subtitulo">Despesas mensais</h3>
+
+            <div class="legendas-box">
+              <label for="conta" class="legenda">Conta</label>
+              <label for="valor" class="legenda">Valor</label>
+            </div>
+
+            <div class="uma-conta ">
+              <input class="conta-input" data-type="conta" type="text" placeholder="nome da conta" value="">
+              <input class="conta-input" data-type="valor" type="text" pattern="[0-9,.]*" maxlength="12" placeholder="0"
+                value="">
+
+              <div class="botoes">
+                <button class="adicionar"></button>
+                <button class="remover"></button>
+              </div>
+
+            </div>
+            <div class="total-grupo">
+              <span class="legenda">Total:</span>
+              <input class="valor" type="text" pattern="[0-9,.]*" value="0" disabled="">
+            </div>
+          </div>
+
+          <div class="total-final">
+            <span class="legenda">Renda total:</span>
+            <input class="valor" type="text" pattern="[0-9,.]*" value="0" disabled="">
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- rodape -->
+  <footer>
+    <div class="wrapper">
+      <p>Educainvest © Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

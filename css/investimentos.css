@@ -1,0 +1,52 @@
+/*?  grid de itens */
+.grid-itens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  place-content: center;
+  place-items: stretch;
+  margin: 3em 0;
+  gap: 40px;
+}
+
+.grid-itens .um-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  background-color: var(--ev-c1);
+  border-radius: 10px;
+  padding: 40px 20px;
+  border: 1px solid var(--ev-c2);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.grid-itens .um-item .item-title {
+  font-family: var(--title-font);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  text-align-last: center;
+}
+
+.grid-itens .um-item .item-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  height: 50px;
+  width: 50px;
+  font-family: var(--default-font);
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--ev-c0);
+  background-color: var(--ev-c9);
+  border-radius: 50%;
+}
+
+.grid-itens .um-item .item-text {
+  font-family: var(--default-font);
+  color: var(--ev-c6);
+  line-height: 1.8;
+}

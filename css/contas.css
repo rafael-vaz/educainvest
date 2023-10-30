@@ -1,0 +1,162 @@
+/*? inputs e botoes ?*/
+.conta-input {
+  height: 30px;
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--ev-c7);
+  border: 1px solid var(--ev-c4);
+}
+
+.conta-input[disabled] {
+  font-weight: 500;
+}
+
+.uma-conta {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.uma-conta.dual {
+  grid-template-columns: 1fr 1fr;
+}
+
+.uma-conta .botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.uma-conta .botoes button {
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--ev-c2);
+  border: 1px solid var(--ev-c4);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.uma-conta .botoes button.adicionar {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%238f8f8f'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z'/%3E%3C/svg%3E");
+}
+
+.uma-conta .botoes button.remover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%238f8f8f'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M18 13H6c-.55 0-1-.45-1-1s.45-1 1-1h12c.55 0 1 .45 1 1s-.45 1-1 1z'/%3E%3C/svg%3E");
+}
+
+.uma-conta .botoes button:hover {
+  background-color: var(--ev-c4);
+}
+
+.legendas-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 70px;
+  gap: 10px;
+  margin: 26px 0 10px 0;
+}
+
+.legendas-box.dual {
+  grid-template-columns: 1fr 1fr;
+}
+
+.legendas-box .legenda {
+  display: block;
+  font-size: 1rem;
+  color: var(--ev-c6);
+}
+
+.botoes-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: var(--ev-c2);
+  gap: 20px;
+}
+
+.botoes-mobile button {
+  height: 30px;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  border: 1px solid var(--ev-c5);
+  cursor: pointer;
+}
+
+.botoes-mobile .adicionar {
+  background-color: var(--ev-c9);
+  color: var(--ev-c0);
+}
+
+.botoes-mobile .remover {
+  background-color: var(--ev-c0);
+  color: var(--ev-c7);
+}
+
+.total-grupo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 2px solid var(--ev-c9);
+  gap: 20px;
+  margin: 1em 0;
+}
+
+.total-grupo .legenda,
+.total-grupo .valor,
+.total-final .legenda,
+.total-final .valor {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--ev-c7);
+  width: 100%;
+}
+
+.total-grupo .valor,
+.total-final .valor {
+  display: block;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: end;
+}
+
+.total-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 30px 0 20px 0;
+  border: 1px solid var(--ev-c9);
+  background-color: var(--ev-c10);
+}
+
+.grupo-contas + .grupo-contas {
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .uma-conta {
+    grid-template-columns: 1fr 1fr;
+  }
+  .legendas-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .uma-conta .botoes {
+    display: none;
+  }
+}

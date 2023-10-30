@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Educainvest</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar" data-animation="true">
+    <div class="navcontent wrapper">
+      <a href="./index.html"><img class="logo" src="./img/logo.svg" alt="Logo"></a>
+      <ul class="navlinks">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./investimentos.html">Investimentos</a></li>
+        <li><a href="./financas.html">Finanças</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+      </ul>
+      <button class="menu-button">
+        <i class="material-icons">menu</i>
+      </button>
+    </div>
+  </nav>
+  <!-- banner -->
+  <section class="banner">
+    <div class="banner-content wrapper">
+      <div class="texto anima-lr">
+        <h3>Organize as suas finanças <span class="destaque">enquanto aprende.</span>
+        </h3>
+      </div>
+      <img class="anima-rl" src="./img/ilustracao1.svg"
+        alt="Mulher segurando um celular, sentada em uma pilha de moedas">
+    </div>
+  </section>
+
+  <main>
+    <div class="wrapper">
+      <!-- servicos -->
+      <section class="sobre">
+        <h3 class="title">Conheça sobre</h3>
+        <div class="cards anima-lr">
+          <div class="um-card">
+            <img src="./img/icones/dinheiro.svg" class="card-img" alt="Dinheiro">
+            <h3 class="card-title">Educação financeira</h3>
+            <div class="card-text">
+              <p>
+                Entenda como organizar o seu dinheiro através das nossas dicas de economia. Elabore planos de gastos e
+                rendimentos de acordo com o seu quadro financeiro.
+              </p>
+            </div>
+          </div>
+
+          <div class="um-card">
+            <img src="./img/icones/grafico.svg" class="card-img" alt="Gráfico">
+            <h3 class="card-title">Investimentos</h3>
+            <div class="card-text">
+              <p>
+                Aprenda a investir o seu dinheiro de forma segura através das instruções dos nossos especialistas. Tenha
+                um acompanhamento de mercado e rendimento em tempo real.
+              </p>
+            </div>
+          </div>
+
+          <div class="um-card">
+            <img src="./img/icones/carteira.svg" class="card-img" alt="Carteira">
+            <h3 class="card-title">Análise de dívidas</h3>
+            <div class="card-text">
+              <p>
+                Aprenda a investir o seu dinheiro de forma segura através das instruções dos nossos especialistas. Tenha
+                um acompanhamento de mercado e rendimento em tempo real.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- beneficios -->
+      <section class="beneficios">
+        <div class="grid col-1by1">
+          <div class="texto anima-lr">
+            <h3 class="title">Nossos benefícios</h3>
+            <ul class="checklist">
+              <li>Simulação total da dívida para melhor compreensão financeira</li>
+              <li>Agendamento com assessor para orientação especializada</li>
+              <li>Métricas de análise de rentabilidade para decisões informadas</li>
+              <li>Dicas de investimentos personalizadas para crescimento sólido</li>
+              <li>Facilidade de acesso à informação para conveniência total</li>
+            </ul>
+          </div>
+          <img class="figura anima-rl" src="./img/ilustracao2.svg" alt="Mulher segurando um porquinho de dinheiro">
+        </div>
+      </section>
+    </div>
+
+    <div class="quadro bg-gray">
+      <!-- novidades -->
+      <section class="dicas wrapper">
+        <div class="grid col-1by1">
+          <div class="texto anima-lr">
+            <h3 class="title">Receba dicas e novidades</h3>
+            <p>Receba notificações sobre dicas financeiras e atualizações no mercado,
+              de maneira prática. Cadastre seus dados no formulário abaixo:</p>
+            <form action="" class="um-form">
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" placeholder="Nome completo" required>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" placeholder="Seu email" required>
+              <label for="fone">Telefone</label>
+              <input type="tel" name="fone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="00 00000-0000">
+              <button type="sumbit">Cadastrar</button>
+            </form>
+          </div>
+          <img class="figura anima-rl" src="./img/ilustracao3.svg"
+            alt="Mulher navegando nas redes sociais através do celular">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- rodape -->
+  <footer>
+    <div class="wrapper">
+      <p>Educainvest © Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

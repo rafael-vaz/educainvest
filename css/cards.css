@@ -1,0 +1,49 @@
+/*? galeria de cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 2em 0 3em 0;
+  color: var(--ev-c7);
+}
+
+.cards .um-card {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 320px;
+  gap: 20px;
+  width: 100%;
+  background-color: var(--ev-c1);
+  border-radius: 10px;
+  padding: 40px 20px;
+  border: 1px solid var(--ev-c2);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.cards .um-card .card-title {
+  font-family: var(--title-font);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cards .um-card .card-img {
+  height: 50px;
+  width: 50px;
+}
+
+.cards .um-card .card-text {
+  font-family: var(--default-font);
+  color: var(--ev-c6);
+  line-height: 1.8;
+}
+
+@media (max-width: 750px) {
+  .cards {
+    margin: 2em 0;
+  }
+}

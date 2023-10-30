@@ -1,0 +1,37 @@
+/*? formularios */
+.um-form input,
+.um-form label {
+  display: block;
+  width: 100%;
+  color: var(--ev-c7);
+}
+.um-form label {
+  margin-bottom: 5px;
+}
+.um-form input {
+  height: 40px;
+  font-size: 1rem;
+  padding: 5px 10px;
+  font-family: var(--default-font);
+  background-color: var(--ev-c0);
+  border: 1px solid var(--ev-c4);
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+.um-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: var(--ev-c9);
+  color: var(--ev-c0);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 30px auto;
+}
+.um-form button:hover {
+  background-color: var(--ev-c11);
+}
