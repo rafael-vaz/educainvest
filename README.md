@@ -1,24 +1,33 @@
-Requisitos para a api:
+# __Educainvest__
+#### Organize as suas finanças enquanto aprende.
+---
+<br>
+<br>
 
-- MySql
-Fazer o download da versão 8.0 no site:
-https://dev.mysql.com/downloads/windows/installer/8.0.html
+## Requisitos para a api:
 
-Durante a instalação, na tela "Choosing a Setup Type", selecionar a opção "Full"
+* MySql
 
-Na tela "Accounts and Roles", defina uma senha para o usuário root
+1. Fazer o download da versão 8.0 no site [Mysql](https://dev.mysql.com/downloads/windows/installer/8.0.html).
 
-Na tela "Connect to Server", digite sua senha root e clique em check para continuar
+2. Durante a instalação, na tela "Choosing a Setup Type", selecionar a opção "Full"
 
-Abrir o workbench, copiar lá o conteúdo do script (api/scriptbanco.txt) e clicar na seta para rodar o código.
+3. Na tela "Accounts and Roles", defina uma senha para o usuário root
+
+4. Na tela "Connect to Server", digite sua senha root e clique em check para continuar
+
+5. Abrir o workbench, copiar lá o conteúdo do script (api/scriptbanco.txt) e clicar na seta para rodar o código.
 
 
-- Node.js
-Fazer download do Node.js no site: https://nodejs.org/en
-(é indicado baixar a versão que está escrito "recommended for most users")
+* Node.js
+1. Fazer download do Node.js no [site](https://nodejs.org/en). 
 
-Para rodar a api:
+   (é indicado baixar a versão que está escrito "recommended for most users")
 
-abrir o prompt dentro da pasta api;
-digitar npm install;
-digitar npm index.js;
+2. Rodar a api:
+
+   Abrir o prompt dentro da pasta api;
+
+   Digitar npm install;
+
+   Digitar npm index.js;
