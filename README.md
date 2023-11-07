@@ -1,33 +1,29 @@
 # __Educainvest__
 #### Organize as suas finanças enquanto aprende.
 ---
-<br>
-<br>
 
-## Requisitos para a api:
+## Documentação do Aplicativo de Educainvest
 
-* MySql
+### INTRODUÇÃO
 
-1. Fazer o download da versão 8.0 no site [Mysql](https://dev.mysql.com/downloads/windows/installer/8.0.html).
+Bem-vindo à documentação do Aplicativo Educainvest. Esta documentação fornecerá informações essenciais para usuários e desenvolvedores interessados em entender e utilizar nosso aplicativo.
 
-2. Durante a instalação, na tela "Choosing a Setup Type", selecionar a opção "Full"
+### PÚBLICO-ALVO
 
-3. Na tela "Accounts and Roles", defina uma senha para o usuário root
+Esta documentação destina-se a:
 
-4. Na tela "Connect to Server", digite sua senha root e clique em check para continuar
+•	Usuários finais que desejam aprender a usar o aplicativo Educainvest.
 
-5. Abrir o workbench, copiar lá o conteúdo do script (api/scriptbanco.txt) e clicar na seta para rodar o código.
+### FUNCIONALIDADES PRINCIPAIS
 
+O Aplicativo Educainvest oferece funcionalidades essenciais para o gerenciamento financeiro pessoal e de investimentos. Algumas das principais funcionalidades incluem:
 
-* Node.js
-1. Fazer download do Node.js no [site](https://nodejs.org/en). 
+1.	Home: Permite aos usuários terem acesso ao resumo das funcionalidades oferecidas pelo aplicativo, sendo elas: educação financeira, investimentos e análise de dividas. Além disso, o usuário poderá preencher o formulário para receber dicas e novidades.
 
-   (é indicado baixar a versão que está escrito "recommended for most users")
+2.	Investimentos: Os usuários contam com dicas importantes para ajudar a investir com segurança.
 
-2. Rodar a api:
+3.	Finanças: Oferece ao usuário a capacidade de calcular e gerenciar seu orçamento familiar, nesse menu o usuário inseri seus rendimentos mensais, despesas mensais e o aplicativo traz o totalizador da renda mensal.
 
-   Abrir o prompt dentro da pasta api;
+4.	Sobre: Neste menu o usuário conhece o objetivo da empresa, bem como os serviços prestados pelo aplicativo.
 
-   Digitar npm install;
-
-   Digitar npm index.js;
+5.	Segurança e Privacidade: Garante a segurança das informações financeiras dos usuários com a criptografia e autenticação adequadas.
