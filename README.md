@@ -18,33 +18,33 @@ Esta documentação destina-se a:
 
 O Aplicativo Educainvest oferece funcionalidades essenciais para o gerenciamento financeiro pessoal e de investimentos. Algumas das principais funcionalidades incluem:
 
-1.	Home: Permite aos usuários terem acesso ao resumo das funcionalidades oferecidas pelo aplicativo, sendo elas: educação financeira, investimentos e análise de dividas. Além disso, o usuário poderá preencher o formulário para receber dicas e novidades.
+1.	__Home:__ Permite aos usuários acessar um resumo das funcionalidades oferecidas pelo aplicativo, sendo elas: educação financeira, investimentos e análise de dividas. Além disso, o usuário poderá preencher o formulário para receber dicas e novidades.
 
-2.	Investimentos: Os usuários contam com dicas importantes para ajudar a investir com segurança.
+2.	__Investimentos:__ Fornecemos dicas importantes para ajudar a investir com segurança.
 
-3.	Finanças: Oferece ao usuário a capacidade de calcular e gerenciar seu orçamento familiar, nesse menu o usuário inseri seus rendimentos mensais, despesas mensais e o aplicativo traz o totalizador da renda mensal.
+3.	__Finanças:__ Oferece ao usuário a capacidade de calcular e gerenciar seu orçamento familiar. Neste menu, o usuário insere seus rendimentos mensais, despesas mensais e o aplicativo traz o totalizador da renda mensal.
 
-4.	Sobre: Neste menu o usuário conhece o objetivo da empresa, bem como os serviços prestados pelo aplicativo.
+4.	__Sobre:__ Neste menu o usuário conhece o objetivo da empresa, bem como os serviços prestados pelo aplicativo.
 
-5.	Segurança e Privacidade: Garante a segurança das informações financeiras dos usuários.
+5.	__Segurança e Privacidade:__ Garantimos a segurança das informações financeiras dos usuários.
 
 ### INSTRUÇÕES DE USO
 
 ### Cadastro receba dicas e novidades
 
-1.	Nome Completo: Preencha seu nome completo neste campo. 
+1.	__Nome Completo:__ Preencha seu nome completo neste campo. 
 
-2.	Email: Insira um endereço de e-mail válido. Certifique-se de que seja um e-mail ativo, pois é por meio dele que você receberá nossas dicas e atualizações.
+2.	__Email:__ Insira um endereço de e-mail válido. Certifique-se de que seja um e-mail ativo, pois é por meio dele que você receberá nossas dicas e atualizações.
 
-3.	Telefone: Insira seu número de telefone no formato: "00 00000-0000" (com DDD e separação com espaço). Certifique-se de fornecer um número ativo para que possamos entrar em contato se necessário.
+3.	__Telefone:__ Insira seu número de telefone no formato: "00 00000-0000" (com DDD e separação com espaço). Certifique-se de fornecer um número ativo para que possamos entrar em contato se necessário.
 
-4.	Cadastrar: Após preencher todos os campos, clique no botão "CADASTRAR" para enviar seus dados.
+4.	__Cadastrar:__ Após preencher todos os campos, clique no botão "CADASTRAR" para enviar seus dados.
 
 ### Organize suas finanças
 
-_Rendimentos Mensais_
+__Rendimentos Mensais__
 
-1. Acesse o menu _Finanças_
+1. Acesse o menu __Finanças__
 
 2.	No campo "Conta", insira um nome descritivo para o rendimento, como "Salário", "Aluguel", ou "Investimentos".
 
@@ -54,9 +54,9 @@ _Rendimentos Mensais_
 
 5.	Clique em "-" para excluir uma conta. Você pode excluir várias contas de rendimento, se necessário.
 
-_Despesas Mensais_
+__Despesas Mensais__
 
-1. Acesse o menu _Finanças_
+1. Acesse o menu __Finanças__
 
 2.	No campo "Conta", insira um nome descritivo para a despesa, como "Aluguel", "Água" ou “Luz”.
 
@@ -70,7 +70,7 @@ _Despesas Mensais_
 
 A seção "TOTAL" mostrará a soma de todas as despesas registradas.
 
-_Renda Total:_
+__Renda Total:__
 
 A seção "RENDA TOTAL" calculará automaticamente sua renda total. Ela é calculada subtraindo a soma das despesas da soma dos rendimentos. Você verá o valor líquido aqui.
 
