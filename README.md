@@ -73,3 +73,40 @@ A seção "TOTAL" mostrará a soma de todas as despesas registradas.
 _Renda Total:_
 
 A seção "RENDA TOTAL" calculará automaticamente sua renda total. Ela é calculada subtraindo a soma das despesas da soma dos rendimentos. Você verá o valor líquido aqui.
+
+## Requisitos para a api:
+
+* MySql
+
+1. Fazer o download da versão 8.0 no site [Mysql](https://dev.mysql.com/downloads/windows/installer/8.0.html).
+
+2. Durante a instalação, na tela "Choosing a Setup Type", selecionar a opção "Full"
+
+3. Na tela "Accounts and Roles", defina uma senha para o usuário root
+
+4. Na tela "Connect to Server", digite sua senha root e clique em check para continuar
+
+5. Abrir o workbench, copiar lá o conteúdo do script (api/scriptbanco.txt) e clicar na seta para rodar o código.
+
+
+* Node.js
+1. Fazer download do Node.js no [site](https://nodejs.org/en). 
+
+   (é indicado baixar a versão que está escrito "recommended for most users")
+
+2. Rodar a api:
+
+   Abrir o prompt dentro da pasta api;
+
+   Digitar npm install;
+
+   Digitar npm index.js;
+
+
+### SUPORTE
+
+Se você tiver dúvidas ou precisar de suporte adicional, entre em contato com nossa equipe de suporte.
+
+### CONCLUSÃO
+
+Esperamos que esta documentação tenha fornecido informações úteis sobre o Aplicativo Educainvest. Este é um guia inicial para ajudar os usuários a aproveitar ao máximo nosso aplicativo. Se você tiver alguma dúvida adicional ou precisar de assistência, não hesite em entrar em contato com nossa equipe de suporte. Obrigado por escolher o Aplicativo Educainvest para suas necessidades financeiras.
