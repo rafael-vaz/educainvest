@@ -2,7 +2,7 @@
 #### Organize as suas finanças enquanto aprende.
 ---
 
-## Documentação do Aplicativo de Educainvest
+## Documentação do Aplicativo Educainvest
 
 ### INTRODUÇÃO
 
