@@ -103,10 +103,10 @@ A seção "RENDA TOTAL" calculará automaticamente sua renda total. Ela é calcu
    Digitar npm index.js;
 
 
-### SUPORTE
+## Suporte
 
 Se você tiver dúvidas ou precisar de suporte adicional, entre em contato com nossa equipe de suporte.
 
-### CONCLUSÃO
+## Conclusão
 
 Esperamos que esta documentação tenha fornecido informações úteis sobre o Aplicativo Educainvest. Este é um guia inicial para ajudar os usuários a aproveitar ao máximo nosso aplicativo. Se você tiver alguma dúvida adicional ou precisar de assistência, não hesite em entrar em contato com nossa equipe de suporte. Obrigado por escolher o Aplicativo Educainvest para suas necessidades financeiras.
