@@ -100,7 +100,7 @@ A seção "RENDA TOTAL" calculará automaticamente sua renda total. Ela é calcu
 
    Digitar npm install;
 
-   Digitar npm index.js;
+   Digitar node index.js;
 
 
 ## Suporte
