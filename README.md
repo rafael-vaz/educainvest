@@ -1,4 +1,4 @@
-# __Educainvest__
+# __Educainvest__ 💰
 #### Organize as suas finanças enquanto aprende.
 ---
 
@@ -110,3 +110,6 @@ Se você tiver dúvidas ou precisar de suporte adicional, entre em contato com n
 ## Conclusão
 
 Esperamos que esta documentação tenha fornecido informações úteis sobre o Aplicativo Educainvest. Este é um guia inicial para ajudar os usuários a aproveitar ao máximo nosso aplicativo. Se você tiver alguma dúvida adicional ou precisar de assistência, não hesite em entrar em contato com nossa equipe de suporte. Obrigado por escolher o Aplicativo Educainvest para suas necessidades financeiras.
+
+---
+__Desenvolvedores do projeto__: Ana Lucia Rizzy Fiori, Gabriela Rodriges, Joelma Silva Alves, Kevin Dornelles Machado, Milena de Almeida Santos, Rafael Dos Santos Vitorio, Rafael Ferreira Vaz, Silvio Vinicius Cruz Mascarenhas Leite.
