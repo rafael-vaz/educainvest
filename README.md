@@ -74,9 +74,15 @@ __Renda Total:__
 
 A seção "RENDA TOTAL" calculará automaticamente sua renda total. Ela é calculada subtraindo a soma das despesas da soma dos rendimentos. Você verá o valor líquido aqui.
 
-## Requisitos para a api:
 
-* MySql
+## Requisitos para rodar o projeto:
+
+- MySql
+- Node.js
+- VSCode com a extensão Live Server
+
+
+### Instalação do MySql:
 
 1. Fazer o download da versão 8.0 no site [Mysql](https://dev.mysql.com/downloads/windows/installer/8.0.html).
 
@@ -86,21 +92,35 @@ A seção "RENDA TOTAL" calculará automaticamente sua renda total. Ela é calcu
 
 4. Na tela "Connect to Server", digite sua senha root e clique em check para continuar
 
-5. Abrir o workbench, copiar lá o conteúdo do script (api/scriptbanco.txt) e clicar na seta para rodar o código.
+
+### Instalação do Node.js:
+
+1. Fazer download do Node.js no [site](https://nodejs.org/en) (é indicado baixar a versão que está escrito "LTS").
 
 
-* Node.js
-1. Fazer download do Node.js no [site](https://nodejs.org/en). 
+## Para rodar o projeto:
 
-   (é indicado baixar a versão que está escrito "recommended for most users")
+1. Popular o banco:
+
+- Abrir o workbench do MySql, copiar lá o conteúdo do arquivo api/scriptbanco.txt e clicar na seta para rodar o código.
+Esse script irá criar a base de dados que será utilizada, irá criar um usuário padronizado para acessar esse banco (assim, para esse primeiro momento, o usuário e senha se mantém fixo no código para fins de testes) e irá criar a tabela que será utilizada para cadastrar os usuários que desejam receber novidades.
 
 2. Rodar a api:
 
-   Abrir o prompt dentro da pasta api;
+- Abrir o prompt dentro da pasta api;
 
-   Digitar npm install;
+- Digitar npm install;
 
-   Digitar node index.js;
+- Digitar node index.js;
+
+Deverá aparece a mensagem de "API funcionando".
+Obs: Manter a janela do prompt aberta enquanto executa o aplicativo.
+
+3. Executar o Educainvest
+
+- Abrir a pasta do projeto dentro do VSCode.
+
+- Clicar no botão "Go Live" (canto inferior direito) para executar o projeto.
 
 
 ## Suporte
@@ -112,4 +132,12 @@ Se você tiver dúvidas ou precisar de suporte adicional, entre em contato com n
 Esperamos que esta documentação tenha fornecido informações úteis sobre o Aplicativo Educainvest. Este é um guia inicial para ajudar os usuários a aproveitar ao máximo nosso aplicativo. Se você tiver alguma dúvida adicional ou precisar de assistência, não hesite em entrar em contato com nossa equipe de suporte. Obrigado por escolher o Aplicativo Educainvest para suas necessidades financeiras.
 
 ---
-__Desenvolvedores do projeto__: Ana Lucia Rizzy Fiori, Gabriela Rodriges, Joelma Silva Alves, Kevin Dornelles Machado, Milena de Almeida Santos, Rafael Dos Santos Vitorio, Rafael Ferreira Vaz, Silvio Vinicius Cruz Mascarenhas Leite.
+__Desenvolvedores do projeto__: 
+Ana Lucia Rizzy Fiori
+Gabriela Rodriges
+Joelma Silva Alves
+Kevin Dornelles Machado
+Milena de Almeida Santos
+Rafael Dos Santos Vitorio
+Rafael Ferreira Vaz
+Silvio Vinicius Cruz Mascarenhas Leite
