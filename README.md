@@ -36,7 +36,7 @@ O Aplicativo Educainvest oferece funcionalidades essenciais para o gerenciamento
 
 2.	__Email:__ Insira um endereço de e-mail válido. Certifique-se de que seja um e-mail ativo, pois é por meio dele que você receberá nossas dicas e atualizações.
 
-3.	__Telefone:__ Insira seu número de telefone no formato: "00 00000-0000" (com DDD e separação com espaço). Certifique-se de fornecer um número ativo para que possamos entrar em contato se necessário.
+3.	__Telefone:__ Insira seu número de telefone. Certifique-se de fornecer um número ativo para que possamos entrar em contato se necessário.
 
 4.	__Cadastrar:__ Após preencher todos os campos, clique no botão "CADASTRAR" para enviar seus dados.
 
@@ -133,11 +133,11 @@ Esperamos que esta documentação tenha fornecido informações úteis sobre o A
 
 ---
 __Desenvolvedores do projeto__: 
-Ana Lucia Rizzy Fiori
-Gabriela Rodriges
-Joelma Silva Alves
-Kevin Dornelles Machado
-Milena de Almeida Santos
-Rafael Dos Santos Vitorio
-Rafael Ferreira Vaz
-Silvio Vinicius Cruz Mascarenhas Leite
+Ana Lucia Rizzy Fiori  
+Gabriela Rodriges  
+Joelma Silva Alves  
+Kevin Dornelles Machado  
+Milena de Almeida Santos  
+Rafael Dos Santos Vitorio  
+Rafael Ferreira Vaz  
+Silvio Vinicius Cruz Mascarenhas Leite  

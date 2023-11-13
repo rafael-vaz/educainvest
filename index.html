@@ -111,15 +111,17 @@
             <h3 class="title">Receba dicas e novidades</h3>
             <p>Receba notificações sobre dicas financeiras e atualizações no mercado,
               de maneira prática. Cadastre seus dados no formulário abaixo:</p>
-            <form action="" class="um-form">
+            <form class="um-form" onsubmit="event.preventDefault(); cadastro()">
+              <span id="resultado-form"></span>
               <label for="nome">Nome</label>
-              <input type="text" name="nome" placeholder="Nome completo" required>
+              <input type="text" name="nome" id="nome-cadastro" placeholder="Nome completo" required>
               <label for="email">E-mail</label>
-              <input type="email" name="email" placeholder="Seu email" required>
+              <input type="email" name="email" id="email-cadastro" placeholder="Seu email" required>
               <label for="fone">Telefone</label>
-              <input type="tel" name="fone" placeholder="(00) 00000-0000" maxlength="15" OnKeyPress="formatar('(##) #####-####',this)">
-              <button type="sumbit">Cadastrar</button>
+              <input type="tel" name="fone" id="tel-cadastro" placeholder="(00) 00000-0000" maxlength="15" OnKeyPress="formatar('(##) #####-####',this)">
+              <button type="submit">Cadastrar</button>
             </form>
+
           </div>
           <img class="figura anima-rl" src="./img/ilustracao3.svg"
             alt="Mulher navegando nas redes sociais através do celular">
@@ -137,17 +139,6 @@
 
 </body>
 
-<script>  
-  function formatar(mascara, documento) {
-    let i = documento.value.length;
-    let saida = '#';
-    let texto = mascara.substring(i);
-    while (texto.substring(0, 1) != saida && texto.length ) {
-      documento.value += texto.substring(0, 1);
-      i++;
-      texto = mascara.substring(i);
-    }
-  }
-</script>
+<script src="js/formulario.js"></script>
 
 </html>
