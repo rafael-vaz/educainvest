@@ -132,8 +132,8 @@ Se você tiver dúvidas ou precisar de suporte adicional, entre em contato com n
 Esperamos que esta documentação tenha fornecido informações úteis sobre o Aplicativo Educainvest. Este é um guia inicial para ajudar os usuários a aproveitar ao máximo nosso aplicativo. Se você tiver alguma dúvida adicional ou precisar de assistência, não hesite em entrar em contato com nossa equipe de suporte. Obrigado por escolher o Aplicativo Educainvest para suas necessidades financeiras.
 
 ---
-__Desenvolvedores do projeto__: 
-Ana Lucia Rizzy Fiori  
+__Desenvolvedores do projeto__:  
+Ana Lucia Rizzi Fiori  
 Gabriela Rodriges  
 Joelma Silva Alves  
 Kevin Dornelles Machado  
