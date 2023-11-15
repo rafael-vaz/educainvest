@@ -35,3 +35,9 @@
 .um-form button:hover {
   background-color: var(--ev-c11);
 }
+
+#resultado-form {
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--ev-c11);
+}
