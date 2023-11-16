@@ -19,7 +19,6 @@ async function cadastro(){
     },
     })
     .then((response) => {
-        console.log(response);
         if(response.status === 201){
             console.log('Cadastro realizado com sucesso!');            
             document.getElementById('resultado-form').innerHTML = 'Cadastro realizado com sucesso!';
