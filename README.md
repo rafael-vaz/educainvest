@@ -75,6 +75,11 @@ __Renda Total:__
 A seção "RENDA TOTAL" calculará automaticamente sua renda total. Ela é calculada subtraindo a soma das despesas da soma dos rendimentos. Você verá o valor líquido aqui.
 
 
+### APRESENTAÇÃO
+
+A apresentação do projeto pode ser vista no vídeo "Educainvest-apresentação.mp4" ou pelo [Youtube](https://youtu.be/3Tl0JTTgDLk).
+
+
 ## Requisitos para rodar o projeto:
 
 - MySql
