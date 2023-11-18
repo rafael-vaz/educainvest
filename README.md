@@ -138,6 +138,9 @@ Esperamos que esta documentação tenha fornecido informações úteis sobre o A
 
 ---
 __Desenvolvedores do projeto__:  
+
+Grupo 02:
+
 Ana Lucia Rizzi Fiori  
 Gabriela Rodriges  
 Joelma Silva Alves  
