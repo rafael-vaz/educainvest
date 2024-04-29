@@ -62,6 +62,27 @@
   width: 100%;
 }
 
+.navcontent .navlinks #login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ev-c9);
+  border: none;
+  outline: none;
+  line-height: 1.2;
+  font-family: var(--title-font);
+  font-size: 1rem;
+  padding: 6px;
+  color: var(--ev-c0);
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.navcontent .navlinks #login-button:hover {
+  background-color: var(--ev-c11);
+}
+
 .navcontent .menu-button {
   display: none;
   justify-content: center;
@@ -144,5 +165,13 @@ body.nav-animation {
   .navcontent .navlinks li a:hover::after,
   .navcontent .navlinks li a.active::after {
     display: none;
+  }
+
+  .navcontent .navlinks #login-button {
+    background: none;
+    border-radius: none;
+    padding: 14px 10px;
+    width: 100%;
+    color: var(--ev-c7);
   }
 }
