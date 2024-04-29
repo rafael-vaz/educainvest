@@ -1,0 +1,507 @@
+/*? calculadora cientifica ?*/
+:root {
+  --main-font: "Poppins", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+}
+
+#calc {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  right: 10px;
+  bottom: 80px;
+  background-color: var(--ev-c9);
+  border-radius: 50%;
+  color: var(--ev-c0);
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+
+#calc:hover {
+  background-color: var(--ev-c11);
+}
+
+.radio_btn {
+  background-color: #dfecff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+  color: #212121;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.radio_btn input {
+  transform: translateY(-1px);
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.degree_radian {
+  font-size: 10px;
+  width: auto;
+  display: flex;
+  margin-right: 100px;
+}
+
+#keyPad {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  display: none;
+}
+
+.keyPad_btnNumeric {
+  background-color: #fff !important;
+}
+
+.keyPad_btnNumeric:hover {
+  background-color: #eaeaea !important;
+}
+
+.calc_max {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.reduceWidth {
+  width: 190px !important;
+}
+
+.reduceHeader {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  width: 105px !important;
+}
+
+.calc_container {
+  background: none repeat scroll 0 0 #fcfcfc;
+  padding: 0px;
+  width: 465px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* KEY BUTTONS */
+
+#keyPad a {
+  background: #f1f1f1;
+  border-color: #aaa;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px 1px 3px;
+  color: #444;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 35px;
+}
+
+#keyPad a.min {
+  font-size: 10.5px;
+}
+
+#keyPad a.last {
+  margin-right: 0px;
+}
+
+#keyPad a:active {
+  position: relative;
+  height: 25px;
+  border-bottom: 1px solid #aaa;
+}
+
+#keyPad_btnEnter:active {
+  bottom: 17px !important;
+}
+
+#keyPad a:hover {
+  background: #eaeaea;
+}
+
+.text_container {
+  display: inline;
+}
+
+.memoryhide {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s, visibility, 1s;
+}
+
+.memoryshow {
+  visibility: visible;
+  opacity: 1;
+}
+
+#memory {
+  background-color: #fd9318;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
+  position: absolute;
+  left: 20px;
+  top: 105px;
+}
+
+/* INPUT/MEM TEXT BOXES*/
+
+#keyPad_UserInput {
+  margin-bottom: 10px;
+}
+
+#keyPad_UserInput1 {
+  font-size: 16px;
+  color: #3c3c3c;
+}
+
+.keyPad_TextBox,
+.keyPad_TextBox1 {
+  background: none repeat scroll 0 0 #fff;
+  border-color: #aaa;
+  border-image: none;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px 1px 3px;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  text-indent: 10px;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 7px;
+  padding-right: 5px;
+}
+
+#keyPad_btnDot {
+  width: 35px !important;
+}
+#keyPad_btn0 {
+  width: 76px !important;
+}
+
+/* ARROWS */
+.calc_arrows {
+  font-size: 24px !important;
+}
+
+/* ENTER a: QUAD WIDTH */
+#keyPad #keyPad_btnEnter {
+  background: none repeat scroll 0 0 #2ecc71;
+  border-color: #27ae60;
+  color: #fff;
+  font-size: 20px;
+  line-height: 47px;
+  width: 35px;
+  height: 53px;
+  font-size: 20px;
+  transform: translateY(-29px);
+}
+
+#keyPad_btnMinus {
+  margin-right: 44px !important;
+}
+
+/* BACKSPACE/CLEAR INPUT KEYS*/
+
+#keyPad #keyPad_btnClr,
+#keyPad #keyPad_btnInverseSign,
+#keyPad #keyPad_btnAllClr {
+  background: none repeat scroll 0 0 #e74c3c;
+  color: #fff;
+  border-color: #c0392b;
+  width: 35px !important;
+}
+
+#keyPad #keyPad_btnBack {
+  background: none repeat scroll 0 0 #e74c3c;
+  color: #fff;
+  border-color: #c0392b;
+  width: 76px !important;
+}
+
+/* SPECIAL FORMATTING FOR SUPER-SCRIPT KEYS */
+#keyPad #keyPad_btnSquare,
+#keyPad #keyPad_btnCube,
+#keyPad #keyPad_btnExp,
+#keyPad #keyPad_btnYpowX {
+  font-size: 12px;
+}
+
+.superscript,
+.subscript {
+  font-size: 0.7em;
+  position: relative;
+  top: -0.5em;
+}
+.subscript {
+  top: 0.5em;
+}
+
+/* New help changes */
+
+#helpContent {
+  height: 262px;
+  overflow: auto;
+  padding: 15px 25px;
+  margin: 15px 0px;
+}
+
+#helptopDiv {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: var(--ev-c11);
+  color: var(--ev-c0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-content {
+  padding: 15px;
+}
+
+.calc_area .title {
+  font-family: var(--main-font);
+  color: var(--ev-c0);
+  user-select: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.calc_area .title::after {
+  content: none;
+}
+
+.calc-btn {
+  width: auto;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.calc_min,
+.calc_max,
+#keyPad_Help,
+#keyPad_Helpback {
+  margin-right: 8px;
+}
+
+.calc-btn i {
+  color: var(--ev-c0);
+}
+
+.calc-btn i:hover {
+  color: #bebebe;
+}
+
+/* Help Content Styles */
+
+#helpContent p,
+.calc-list li,
+#helpContent h3 {
+  line-height: 25px;
+}
+
+#helpContent p {
+  margin: 12px 0;
+}
+
+#helpContent p,
+.calc-list li {
+  font-family: var(--secondary-font);
+  font-weight: normal;
+  color: #212121;
+  font-size: 15px;
+}
+
+#helpContent h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+#helpContent h3 i {
+  margin-right: 5px;
+}
+
+/* Listas */
+
+.calc-list {
+  padding: 0;
+  margin-left: 10px;
+}
+
+.calc-list li {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+.calc-list li::before {
+  color: #4e4e4e;
+}
+
+.calc-list li::before {
+  color: #4e4e4e;
+}
+
+.calc-checklist {
+  list-style: none;
+}
+
+.calc-checklist li:before {
+  content: "✔";
+  margin-right: 5px;
+}
+
+.calc-pointlist {
+  list-style: none;
+}
+
+.calc-pointlist li:before {
+  content: "●";
+  margin-right: 5px;
+}
+
+.calc-arrowlist {
+  list-style: none;
+}
+
+.calc-arrowlist li:before {
+  content: "▸";
+  margin-right: 5px;
+}
+
+/* Imagens */
+
+.help-img {
+  height: auto;
+  width: 90% !important;
+  margin: 20px 0px 40px 0px !important;
+}
+
+/* Display Flex */
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Minimize position*/
+
+.minimize {
+  position: fixed !important;
+  inset: unset !important;
+  right: 10px !important;
+  bottom: 10px !important;
+}
+
+.title-hidden {
+  display: inline;
+}
+
+.calc_row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+#last-row {
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.calc_area {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.minimize-area {
+  height: auto !important;
+  width: auto !important;
+}
+
+.switch-buttons {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+  display: none;
+  border-radius: 4px;
+}
+
+.switch-buttons button {
+  padding: 4px;
+  width: 40px;
+  color: #444;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px #868686;
+  background-color: #fff;
+}
+
+.switch-buttons button:first-child {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .calc_container {
+    width: 280px;
+  }
+
+  #helpContent {
+    height: 300px;
+  }
+
+  .title-hidden {
+    display: none;
+  }
+
+  .advanced {
+    display: none;
+  }
+
+  .switch-buttons {
+    display: flex;
+  }
+}
