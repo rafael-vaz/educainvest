@@ -41,3 +41,12 @@
   text-align: center;
   color: var(--ev-c11);
 }
+
+.um-form #cancelar {
+  background-color: var(--ev-c5);
+  color: var(--ev-c7);
+}
+
+.um-form #cancelar:hover {
+  background-color: #a0a0a0;
+}

@@ -62,6 +62,7 @@
   width: 100%;
 }
 
+.navcontent .navlinks #logout-button,
 .navcontent .navlinks #login-button {
   display: flex;
   justify-content: center;
@@ -77,6 +78,10 @@
   border-radius: 4px;
   cursor: pointer;
   gap: 6px;
+}
+
+.navcontent .navlinks #logout-button {
+  display: none;
 }
 
 .navcontent .navlinks #login-button:hover {
@@ -158,8 +163,9 @@ body.nav-animation {
     background-color: var(--ev-c5);
   }
 
+  .navcontent .navlinks li button:hover,
   .navcontent .navlinks li a:hover {
-    background-color: var(--ev-c3);
+    background-color: var(--ev-c3) !important;
   }
 
   .navcontent .navlinks li a:hover::after,
