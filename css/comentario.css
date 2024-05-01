@@ -1,0 +1,24 @@
+.comentario {
+  height: auto;
+  min-height: 100px;
+  width: 100%;
+  resize: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* editor de texto */
+.tox-tinymce {
+  border-radius: 4px !important;
+  border: 1px solid var(--ev-c5) !important;
+  margin: 30px 0 20px 0;
+}
+.tox-editor-header {
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--ev-c5) !important;
+}
+
+.tox .tox-tbtn {
+  height: 20px !important;
+  width: auto !important;
+}

@@ -14,6 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="./js/libs/tinymce/tinymce.min.js"></script>
   <script type="module" src="./js/main.js"></script>
   <script src="./js/libs/calculadora/jquery.min.js"></script>
   <script src="./js/libs/calculadora/jquery-ui.min.js"></script>
@@ -56,7 +57,7 @@
             total da <strong>renda mensal</strong>.</p>
         </div>
 
-        <div class="quadro-padrao anima-lr" data-orcamento="true">
+        <div class="quadro-padrao anima-lr" data-indice="renda" data-orcamento="true">
 
           <div class="grupo-contas" data-categoria="rendimentos">
 
@@ -81,6 +82,7 @@
               <span class="legenda">Total:</span>
               <input class="valor" type="text" pattern="[0-9,.]*" value="0" disabled="">
             </div>
+            <textarea class="comentario" placeholder="comente sobre os rendimentos"></textarea>
           </div>
 
           <div class="grupo-contas" data-categoria="despesas">
@@ -106,6 +108,7 @@
               <span class="legenda">Total:</span>
               <input class="valor" type="text" pattern="[0-9,.]*" value="0" disabled="">
             </div>
+            <textarea class="comentario" placeholder="comente sobre as despesas"></textarea>
           </div>
 
           <div class="total-final">

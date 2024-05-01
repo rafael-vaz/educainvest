@@ -173,6 +173,7 @@ body.nav-animation {
     display: none;
   }
 
+  .navcontent .navlinks #logout-button,
   .navcontent .navlinks #login-button {
     background: none;
     border-radius: none;

@@ -1,0 +1,35 @@
+/* formatações para o editor tinymce */
+* {
+  color: #212121;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  cursor: text;
+}
+
+/* titulos */
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+h3,
+h4 {
+  font-size: 16px;
+}
+
+/* texto */
+p,
+ul,
+ol {
+  line-height: 1.5;
+}
+
+/* links */
+a {
+  color: blue;
+  cursor: pointer;
+}
