@@ -36,6 +36,10 @@ body {
   color: var(--ev-c7);
 }
 
+main {
+  min-height: calc(100vh - 170px);
+}
+
 /* embrulho */
 .wrapper {
   max-width: 1200px;
