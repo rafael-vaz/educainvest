@@ -4,6 +4,7 @@ import Conta from "./contas.js";
 import initCalculadora from "./calculadora.js";
 import Autenticacao from "./autenticacao.js";
 import Comentario from "./comentarios.js";
+import { initLoading } from "./loading.js";
 
 //? navbar
 const navbar = new NavbarAnimation(".navbar", ".navlinks", ".menu-button");
@@ -23,8 +24,12 @@ conta.initConta();
 const autenticacao = new Autenticacao("#login-button", "#logout-button");
 autenticacao.initAutenticacao();
 
+//? comentario
 const comentario = new Comentario(".comentario");
 comentario.initComentario();
 
-//? inicia calculadora
+//? loading
+initLoading();
+
+//? calculadora
 initCalculadora();

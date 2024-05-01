@@ -9,3 +9,14 @@ export function debounce(callback, delay) {
     }, delay);
   };
 }
+
+// verifica se todos os editores do tiny estao devidamente carregados
+export function areTinyEditorsLoaded() {
+  var editors = tinymce.get();
+  for (let i = 0; i < editors.length; i++) {
+    if (!editors[i].initialized) {
+      return false;
+    }
+  }
+  return true;
+}

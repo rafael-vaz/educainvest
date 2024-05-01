@@ -1,0 +1,47 @@
+/*? loading spinner ?*/
+.spinner-content {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-content.modal {
+  position: fixed;
+  min-height: auto;
+  top: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.spinner {
+  display: block;
+  height: 62px;
+  width: 62px;
+  margin: auto;
+  border: 8px rgba(168, 85, 247, 0.6) solid;
+  border-top: 8px var(--ev-c9) solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot 0.6s infinite linear;
+  animation: spCircRot 0.6s infinite linear;
+}
+
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
