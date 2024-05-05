@@ -1,3 +1,11 @@
+if (localStorage.getItem('usuario-logado') !== null) {
+    console.log('usuário logado: ' + localStorage.getItem('usuario-logado'));
+    //exibir botão de deslogar
+} else {
+    console.log('nenhum usuário logado!');
+    //exibir botão de logar
+  }
+
 async function cadastro_usuario(){
     const nome = document.getElementById('nome-cadastro').value.trim();
     const email = document.getElementById('email-cadastro').value.trim();
@@ -22,7 +30,6 @@ async function cadastro_usuario(){
     })
     .then((response) => {
         if(response.status === 201){
-            console.log('Cadastro realizado com sucesso!');            
             document.getElementById('resultado-cadastro').innerHTML = 'Cadastro realizado com sucesso!';
 
             document.getElementById('nome-cadastro').value = '';
@@ -36,12 +43,10 @@ async function cadastro_usuario(){
               })
         }
         else{
-            console.log('Erro ao cadastrar');
             document.getElementById('resultado-cadastro').innerHTML = 'Erro ao cadastrar o usuário';
         }
     })
     .catch(error => {
-        console.log('Erro, tente novamente mais tarde');
         document.getElementById('resultado-cadastro').innerHTML = 'Erro, tente novamente mais tarde';
     })
   };
@@ -67,24 +72,26 @@ async function login_usuario(){
     .then(async (response) => {
         if(response.status === 200){
             let body = await response.json();
-            console.log('Login realizado com sucesso!'); 
-            //document.getElementById('resultado-login').innerHTML = 'usuário logado!';
-            localStorage.setItem("usuario-logado", body.usuario)
+            localStorage.setItem('usuario-logado', body.usuario);
             //fechar modal
-            //alterar botão para logout
+            window.location.href = 'index.html';
         }
-        else if(response.status === 400){
+        else if(response.status === 401){
+            document.getElementById('resultado-login').innerHTML = 'Usuário e/ou senha inválidos';
+        }
+        else{
             response.json().then(function(object) {
                 document.getElementById('resultado-login').innerHTML = object.erro;
               })
-        }
-        else{
-            console.log('Erro ao fazer login');
-            document.getElementById('resultado-login').innerHTML = 'Usuário e/ou senha inválidos';
         }
     })
     .catch(error => {
         console.log('Erro, tente novamente mais tarde');
         document.getElementById('resultado-login').innerHTML = 'Erro, tente novamente mais tarde';
     })
+  };
+
+function deslogar_usuario(){
+    localStorage.removeItem('usuario-logado');
+    window.location.href = 'index.html';
   };

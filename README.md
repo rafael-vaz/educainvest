@@ -40,6 +40,30 @@ O Aplicativo Educainvest oferece funcionalidades essenciais para o gerenciamento
 
 4.	__Cadastrar:__ Após preencher todos os campos, clique no botão "CADASTRAR" para enviar seus dados.
 
+### Cadastro no site
+
+1. Clique no botão "Login" e em seguida em "Cadastre-se".
+
+2.	__Nome Completo:__ Preencha seu nome completo neste campo. 
+
+3.	__Email:__ Insira um endereço de e-mail válido. Certifique-se de que seja um e-mail ativo.
+
+4.	__Usuário:__ Insira seu nome de usuário. É por meio dele que será efetuado o login.
+
+4.	__Senha:__ Crie uma senha segura.
+
+5. Após preencher todos os campos, clique no botão "CONFIRMAR" para enviar seus dados.
+
+### lOGIN
+
+1. Clique no botão "Login".
+
+2.	__Usuário:__ Digite seu nome de usuário.
+
+3.	__Senha:__ Digite sua senha.
+
+4. Clique no botão "ACESSAR CONTA" e, se o usuário e senha estiverem corretos, o login será efetuado.
+
 ### Organize suas finanças
 
 __Rendimentos Mensais__
@@ -108,7 +132,7 @@ A apresentação do projeto pode ser vista no vídeo "Educainvest-apresentação
 1. Popular o banco:
 
 - Abrir o workbench do MySql, copiar lá o conteúdo do arquivo api/scriptbanco.txt e clicar na seta para rodar o código.
-Esse script irá criar a base de dados que será utilizada, irá criar um usuário padronizado para acessar esse banco (assim, para esse primeiro momento, o usuário e senha se mantém fixo no código para fins de testes) e irá criar a tabela que será utilizada para cadastrar os usuários que desejam receber novidades.
+Esse script irá criar a base de dados que será utilizada, irá criar um usuário padronizado para acessar esse banco (assim, para esse primeiro momento, o usuário e senha se mantém fixo no código para fins de testes) e irá criar a tabela que será utilizada para cadastrar os usuários que desejam receber novidades e também a tabela de cadastro de usuários para efetuar o login.
 
 2. Rodar a api:
 
