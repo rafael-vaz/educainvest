@@ -1,7 +1,7 @@
 async function cadastro_newsletter(){
-    const nome = document.getElementById('nome-cadastro').value;
-    const email = document.getElementById('email-cadastro').value;
-    const telefone = document.getElementById('tel-cadastro').value;
+    const nome = document.getElementById('nome-newsletter').value;
+    const email = document.getElementById('email-newsletter').value;
+    const telefone = document.getElementById('tel-newsletter').value;
     
     const usuario = {
       nome: nome,
@@ -23,13 +23,12 @@ async function cadastro_newsletter(){
             console.log('Cadastro realizado com sucesso!');            
             document.getElementById('resultado-form').innerHTML = 'Cadastro realizado com sucesso!';
 
-            document.getElementById('nome-cadastro').value = '';
-            document.getElementById('email-cadastro').value = '';
-            document.getElementById('tel-cadastro').value = '';
+            document.getElementById('nome-newsletter').value = '';
+            document.getElementById('email-newsletter').value = '';
+            document.getElementById('tel-newsletter').value = '';
         }
         else if(response.status === 400){
             response.json().then(function(object) {
-                console.log(object.erro);
                 document.getElementById('resultado-form').innerHTML = object.erro;
               })
         }
@@ -42,8 +41,7 @@ async function cadastro_newsletter(){
         console.log('Erro, tente novamente mais tarde');
         document.getElementById('resultado-form').innerHTML = 'Erro, tente novamente mais tarde';
     })
-  };
-  
+  };  
 
   function formatar(mascara, documento) {
     let i = documento.value.length;

@@ -14,6 +14,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script type="module" src="./js/main.js"></script>
+  <script src="js/formulario.js"></script>
+  <script src="js/cadastro.js"></script>
 </head>
 
 <body>
@@ -118,11 +120,11 @@
             <form class="um-form" onsubmit="event.preventDefault(); cadastro_newsletter()">
               <div id="resultado-form"></div>
               <label for="nome">Nome</label>
-              <input type="text" name="nome" id="nome-cadastro" placeholder="Nome completo" required>
+              <input type="text" name="nome" id="nome-newsletter" placeholder="Nome completo" required>
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="email-cadastro" placeholder="Seu email" required>
+              <input type="email" name="email" id="email-newsletter" placeholder="Seu email" required>
               <label for="fone">Telefone</label>
-              <input type="tel" name="fone" id="tel-cadastro" placeholder="(00) 00000-0000" maxlength="15"
+              <input type="tel" name="fone" id="tel-newsletter" placeholder="(00) 00000-0000" maxlength="15"
                 OnKeyPress="formatar('(##) #####-####',this)">
               <button type="submit">Cadastrar</button>
             </form>
@@ -143,7 +145,5 @@
   </footer>
 
 </body>
-
-<script src="js/formulario.js"></script>
 
 </html>

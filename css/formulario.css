@@ -36,7 +36,7 @@
   background-color: var(--ev-c11);
 }
 
-#resultado-form {
+#resultado-form, #resultado-cadastro, #resultado-login {
   margin-bottom: 10px;
   text-align: center;
   color: var(--ev-c11);

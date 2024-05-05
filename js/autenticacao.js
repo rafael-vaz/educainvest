@@ -16,11 +16,12 @@ export default class Autenticacao {
   <div class="modal" data-type='login'>
   <div class="quadro-modal">
     <h3>Realizar Login</h3>
-    <form class='um-form' action="">
+    <form class='um-form' action="" onsubmit="event.preventDefault(); login_usuario()">
+      <div id="resultado-login"></div>    
       <label for="usuario">Usuário</label>
-      <input type="text" name="usuario" id="usuario" placeholder="nome do usuário">
+      <input type="text" name="usuario" id="usuario-login" placeholder="nome do usuário">
       <label for="senha">Senha</label>
-      <input type="password" name="senha" id="senha" placeholder="digite sua senha">
+      <input type="password" name="senha" id="senha-login" placeholder="digite sua senha">
       <div class="grid col-1by1">
         <button class="button" id="acessar">
           Acessar conta
@@ -53,18 +54,19 @@ export default class Autenticacao {
     const boxHTML = `<div class="modal" data-type='cadastro'>
     <div class="quadro-modal">
       <h3>Criar Cadastro</h3>
-      <form class='um-form' action="">
+      <form class='um-form' action="" onsubmit="event.preventDefault(); cadastro_usuario()">
+        <div id="resultado-cadastro"></div>  
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" placeholder="ex: João da Silva">
+        <input type="text" name="nome" id="nome-cadastro" placeholder="ex: João da Silva">
         <label for="usuario">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="ex: joao.silva@teste.com">
+        <input type="email" name="email" id="email-cadastro" placeholder="ex: joao.silva@teste.com">
         <label for="usuario">Usuário</label>
-        <input type="text" name="usuario" id="usuario" placeholder="ex: joao.silva">
+        <input type="text" name="usuario" id="usuario-cadastro" placeholder="ex: joao.silva">
         <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" placeholder="digite sua senha">
+        <input type="password" name="senha" id="senha-cadastro" placeholder="digite sua senha">
         <div class="grid col-1by1">
           <button class="button" id="confirmar">
-            Cofirmar
+            Confirmar
           </button>
           <button class="button" id="cancelar">
             Cancelar
