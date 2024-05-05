@@ -1,4 +1,4 @@
-async function cadastro(){
+async function cadastro_newsletter(){
     const nome = document.getElementById('nome-cadastro').value;
     const email = document.getElementById('email-cadastro').value;
     const telefone = document.getElementById('tel-cadastro').value;
@@ -11,7 +11,7 @@ async function cadastro(){
   
     const json = JSON.stringify(usuario);  
     
-    fetch('http://localhost:5000/cadastro', {
+    fetch('http://localhost:5000/cadastronewsletter', {
     method: 'POST',
     body: json,
     headers: {
