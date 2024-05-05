@@ -54,7 +54,7 @@ O Aplicativo Educainvest oferece funcionalidades essenciais para o gerenciamento
 
 5. Após preencher todos os campos, clique no botão "CONFIRMAR" para enviar seus dados.
 
-### lOGIN
+### Login
 
 1. Clique no botão "Login".
 
