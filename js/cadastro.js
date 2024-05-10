@@ -1,10 +1,16 @@
-if (localStorage.getItem('usuario-logado') !== null) {
-    console.log('usuário logado: ' + localStorage.getItem('usuario-logado'));
-    //exibir botão de deslogar
-} else {
-    console.log('nenhum usuário logado!');
-    //exibir botão de logar
-  }
+document.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('usuario-logado') !== null) {
+        console.log('usuário logado: ' + localStorage.getItem('usuario-logado'));
+        document.getElementById('login-button').style.display = 'none';
+        document.getElementById('logout-button').style.display = 'flex';
+    } else {
+        console.log('nenhum usuário logado!');
+        document.getElementById('login-button').style.display = 'flex';
+        document.getElementById('logout-button').style.display = 'none';
+      }
+    
+    document.getElementById('logout-button').addEventListener("click", deslogar_usuario);
+});
 
 async function cadastro_usuario(){
     const nome = document.getElementById('nome-cadastro').value.trim();
