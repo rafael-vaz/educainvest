@@ -22,7 +22,7 @@ O Aplicativo Educainvest oferece funcionalidades essenciais para o gerenciamento
 
 2.	__Investimentos:__ Fornecemos dicas importantes para ajudar a investir com segurança.
 
-3.	__Finanças:__ Oferece ao usuário a capacidade de calcular e gerenciar seu orçamento familiar. Neste menu, o usuário insere seus rendimentos mensais, despesas mensais e o aplicativo traz o totalizador da renda mensal.
+3.	__Finanças:__ Oferece ao usuário a capacidade de calcular e gerenciar seu orçamento familiar. Neste menu, o usuário insere seus rendimentos mensais, despesas mensais e o aplicativo traz o totalizador da renda mensal. Além disso, há disponível na página um botão onde é possível acessar a calculadora científica, com instruções de uso para que o usuário execute  cálculos de maneira rápida sem precisar acessar outra ferramenta.
 
 4.	__Sobre:__ Neste menu o usuário conhece o objetivo da empresa, bem como os serviços prestados pelo aplicativo.
 
@@ -163,7 +163,7 @@ Esperamos que esta documentação tenha fornecido informações úteis sobre o A
 ---
 __Desenvolvedores do projeto__:  
 
-Grupo 02:
+Grupo 07:
 
 Ana Lucia Rizzi Fiori  
 Gabriela Rodriges  
