@@ -3,10 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('usuário logado: ' + localStorage.getItem('usuario-logado'));
         document.getElementById('login-button').style.display = 'none';
         document.getElementById('logout-button').style.display = 'flex';
+        document.getElementById('menu-investimentos').style.display = 'block';
+        document.getElementById('menu-financas').style.display = 'block';
     } else {
         console.log('nenhum usuário logado!');
         document.getElementById('login-button').style.display = 'flex';
         document.getElementById('logout-button').style.display = 'none';
+        document.getElementById('menu-investimentos').style.display = 'none';
+        document.getElementById('menu-financas').style.display = 'none';
       }
     
     document.getElementById('logout-button').addEventListener("click", deslogar_usuario);
